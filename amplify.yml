@@ -18,6 +18,7 @@ frontend:
       - 'first.js'
       - 'threshold.js'
       - 'experimentLanguage.js'
+      - 'conditions/**/*'
       - 'js/**/*'
       - 'components/**/*'
       - 'parameters/**/*'

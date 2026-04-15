@@ -1,1 +1,1 @@
-export const experimentLanguage = "Persian";
+const experimentLanguage = "Persian";
