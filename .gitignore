@@ -1,5 +1,5 @@
 # lib
-js
+# js/
 
 # Vite build artifacts
 dist
@@ -46,7 +46,6 @@ debugExperiment.csv
 simulateExperiment.csv
 
 data/
-conditions/
 *_lastrun.py
 crowding*.py
 .DS_Store
