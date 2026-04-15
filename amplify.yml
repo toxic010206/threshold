@@ -1,0 +1,28 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+        - npm run setup:psychojs
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .
+    files:
+      - 'index.html'
+      - 'examples/index.html'
+      - 'coi-serviceworker.js'
+      - 'first.js'
+      - 'threshold.js'
+      - 'experimentLanguage.js'
+      - 'js/**/*'
+      - 'components/**/*'
+      - 'parameters/**/*'
+      - 'models/**/*'
+      - 'examples/generated/**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - psychojs/node_modules/**/*

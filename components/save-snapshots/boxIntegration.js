@@ -1,4 +1,4 @@
-import { captureError } from "../../../source/sentry";
+import { captureError } from "../sentry";
 
 export const saveSnapshot = async (image, experimentID, participantID) => {
   try {

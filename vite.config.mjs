@@ -81,22 +81,11 @@ export default defineConfig(({ mode }) => {
     server: isDev
       ? {
           port: 5500,
-          open: true,
-          headers: {
-            "Cross-Origin-Embedder-Policy": "require-corp",
-            "Cross-Origin-Opener-Policy": "same-origin",
-          },
-          fs: {
-            deny: ["js/**"],
-          },
+          open: false,
         }
       : {
           port: 5500,
           open: true,
-          headers: {
-            "Cross-Origin-Embedder-Policy": "require-corp",
-            "Cross-Origin-Opener-Policy": "same-origin",
-          },
         },
     resolve: {
       extensions: [".ts", ".js"],

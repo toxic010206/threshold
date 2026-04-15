@@ -182,12 +182,18 @@ async function main() {
   process.env.VITE_EXAMPLE_NAME = exampleName;
   console.log(`Starting example: ${exampleName}`);
 
-  // Run check:rust
+  // Run check:rust (skip on Windows if wasm files exist)
   try {
     await runCommand('npm', ['run', 'check:rust']);
   } catch (err) {
-    console.error('Failed to run check:rust:', err.message);
-    process.exit(1);
+    // Check if WASM files already exist (pre-built in repo)
+    const wasmExists = existsSync(join('@rust/pkg/easyeyes_wasm_bg.wasm'));
+    if (wasmExists) {
+      console.log('WASM files pre-built, skipping Rust check.');
+    } else {
+      console.error('Failed to run check:rust:', err.message);
+      process.exit(1);
+    }
   }
 
   // Start Vite with remaining arguments
