@@ -5,6 +5,7 @@ frontend:
       commands:
         - npm ci
         - npm run setup:psychojs
+        - npm run examples
     build:
       commands:
         - npm run build
@@ -26,3 +27,12 @@ frontend:
     paths:
       - node_modules/**/*
       - psychojs/node_modules/**/*
+  customRules:
+    - source: /^https?:\\/\\/(?!www\\.)?[^/]+\\.(easyeyes\\.app|easyeyes\\.com|easyeyes\\.io)\\/?.*$/
+      target: /index.html
+      status: 200
+      condition: null
+    - source: /\\[^.]*$/
+      target: /index.html
+      status: 200
+      condition: null
