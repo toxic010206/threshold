@@ -1,17 +1,17 @@
 # EasyEyes Threshold
 
-📖 [**Manual**](https://docs.google.com/document/d/e/2PACX-1vTTrqaSyva2afVupLchBjfTHc_YW5jAbEexGbudXMJ9xMKPBDA3nxQmHXa4wjnAoSVabeEA8T9CGIMa/pub)<br />
-📝 [**Parameter Glossary**](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ8QswX_5h_oNS2Ly6VgoONGIxJHqDFjdZqWY_HUxH2Nr_LNkGDBL8FXz74l9BxVNR2AIXGhHir9GAd/pub?gid=1287694458&single=true&output=pdf)<br />
-🌏 [**Webapp**](https://easyeyes.app/experiment/) (beta)
+📖 [**Manual**](https://toxic010206.github.io)<br />
+📝 [**Parameter Glossary**](https://toxic010206.github.io)<br />
+🌏 [**Webapp**](https://toxic010206.github.io) (beta)
 
-A PsychoJS-based experiment generator for the measuring various psychometric thresholds, e.g., crowding. Please visit [https://easyeyes.app/experiment](https://easyeyes.app/experiment/) for more instructions.
+A PsychoJS-based experiment generator for the measuring various psychometric thresholds, e.g., crowding. Please visit [https://toxic010206.github.io](https://toxic010206.github.io) for more instructions.
 
 ## Development
 
 To clone this repo, use
 
 ```shell
-git clone --recurse-submodules https://github.com/EasyEyes/threshold.git
+git clone --recurse-submodules https://toxic010206.github.io
 ```
 
 Then, run the following for the initial setup
